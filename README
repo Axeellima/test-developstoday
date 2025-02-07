@@ -1,4 +1,3 @@
-````markdown
 # Welcome to the Country Searcher Project
 
 **Project by Axel Lima**  
