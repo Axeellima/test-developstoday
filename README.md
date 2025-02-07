@@ -29,7 +29,6 @@ Start by cloning the repository to your local machine:
 git clone https://github.com/Axeellima/test-developstoday
 cd test-developstoday
 ```
-````
 
 ### 2. Set up the **Front-end**
 
