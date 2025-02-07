@@ -68,8 +68,4 @@ If you encounter any issues while setting up or running the app, make sure that:
 2. All dependencies are installed properly (try running `npm install` again if needed).
 3. Your port is not already in use by another application. You can change the port in `.env.local`.
 
-For further issues, check the logs in the terminal or open an issue in the GitHub repository.
-
 ---
-
-This should cover all the basic steps for setting up the **Country Searcher** front-end application. If you need more detailed documentation or setup steps, feel free to add more specifics!
