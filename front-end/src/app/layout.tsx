@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { Provider } from "@/components/ui/provider"
+import Header from "@/components/Header"
+import Head from "next/head"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +17,17 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body>
-        <Provider>{children}</Provider>
+        <Provider>
+          <Header />
+          {children}
+        </Provider>
       </body>
     </html>
   )

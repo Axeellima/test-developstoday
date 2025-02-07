@@ -5,7 +5,6 @@ export const getCountryInfoService = async ({
 }: {
   countryCode: string
 }) => {
-  console.log("oi")
   const borderResponse = await axios.get(
     `${process.env.DATE_NAGER_API}/CountryInfo/${countryCode}`
   )

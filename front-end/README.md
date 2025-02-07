@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## **Country Searcher - Front-End Setup**
 
-## Getting Started
+This guide will walk you through the steps to set up and run the **Country Searcher** front-end application.
 
-First, run the development server:
+### **1. Clone the Repository**
+
+Start by cloning the repository from GitHub:
+
+```bash
+git clone https://github.com/Axeellima/test-developstoday
+```
+
+### **2. Navigate to the Front-End Directory**
+
+Once the repository is cloned, navigate to the front-end folder:
+
+```bash
+cd front-end
+```
+
+### **3. Install Dependencies**
+
+After navigating to the front-end folder, install all the required dependencies by running:
+
+```bash
+npm install
+```
+
+This will install all the necessary packages specified in the `package.json` file.
+
+### **4. Configure Your Environment**
+
+You need to set up your `.env.local` file to configure the API URL and your preferred port. To do this:
+
+1. Copy the `.env.example` file and rename it to `.env.local`:
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+2. Open `.env.local` and configure the following variables:
+
+   - `NEXT_PUBLIC_API_URL`: Set this to your backend API URL.
+
+Example:
+
+```env
+NEXT_PUBLIC_API_URL=https://api.example.com/api/
+```
+
+### **5. Run the Application**
+
+Now that everything is set up, you can start the development server by running:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the application on (e.g., `http://localhost:3000`). You can now open the app in your browser and begin interacting with it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Troubleshooting**
 
-## Learn More
+If you encounter any issues while setting up or running the app, make sure that:
 
-To learn more about Next.js, take a look at the following resources:
+1. The API URL in `.env.local` is correct.
+2. All dependencies are installed properly (try running `npm install` again if needed).
+3. Your port is not already in use by another application. You can change the port in `.env.local`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For further issues, check the logs in the terminal or open an issue in the GitHub repository.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This should cover all the basic steps for setting up the **Country Searcher** front-end application. If you need more detailed documentation or setup steps, feel free to add more specifics!
